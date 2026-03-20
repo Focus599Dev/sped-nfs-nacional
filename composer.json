@@ -1,0 +1,38 @@
+{
+    "name": "nfephp-org/sped-nfs-nacional",
+    "type": "library",
+    "description": "API para comunicação com ambiente de NFS nacional",
+    "keywords": [
+        "nfs"
+    ],
+    "homepage": "https://github.com/Focus599Dev/sped-nfs-nacional",
+    "license": [
+        "LGPL-3.0-or-later",
+        "GPL-3.0-or-later",
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Marlon O. Barbosa",
+            "email": "marlon.barbosa@focusit.com.br",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">= 7.2"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "NFePHP\\NFSeNacional\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NFePHP\\NFSeNacional\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {},
+    "extra": {},
+    "minimum-stability": "stable"
+}
