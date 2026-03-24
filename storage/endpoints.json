@@ -1,0 +1,22 @@
+{
+    "producao": {
+        "baseUrl": "https://adn.nfse.gov.br",
+        "distribuicao": {
+            "dfePorNSU": "/contribuintes/DFe/{nsu}",
+            "eventosPorChave": "/contribuintes/DFe/{chaveAcesso}/Eventos"
+        },
+        "danfse": {
+            "danfe": "/danfse/{chave}"
+        }
+    },
+    "homologacao": {
+        "baseUrl": "https://adn.producaorestrita.nfse.gov.br",
+        "distribuicao": {
+            "dfePorNSU": "/contribuintes/DFe/{nsu}",
+            "eventosPorChave": "/contribuintes/DFe/{chaveAcesso}/Eventos"
+        },
+        "danfse": {
+            "danfe": "/danfse/{chave}"
+        }
+    }
+}

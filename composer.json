@@ -3,7 +3,12 @@
     "type": "library",
     "description": "API para comunicação com ambiente de NFS nacional",
     "keywords": [
-        "nfs"
+        "nfs-e",
+        "nfse",
+        "nota fiscal servico",
+        "sped",
+        "nfephp",
+        "adn"
     ],
     "homepage": "https://github.com/Focus599Dev/sped-nfs-nacional",
     "license": [
@@ -19,7 +24,11 @@
         }
     ],
     "require": {
-        "php": ">= 7.2"
+        "php": ">= 7.4",
+        "focus599dev/sped-common": "^v5.0.43",
+        "ext-curl": "*",
+        "ext-openssl": "*",
+        "ext-json": "*"
     },
     "require-dev": {},
     "autoload": {

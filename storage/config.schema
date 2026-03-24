@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "NFS-e Nacional Config",
+    "type": "object",
+    "required": [
+        "cnpj",
+        "tpAmb"
+    ],
+    "properties": {
+        "cnpj": {
+            "type": "string",
+            "minLength": 14,
+            "maxLength": 14,
+            "description": "CNPJ do contribuinte (somente dígitos, 14 caracteres)"
+        },
+        "tpAmb": {
+            "type": "integer",
+            "enum": [1, 2],
+            "description": "Tipo de ambiente: 1=produção, 2=homologação"
+        },
+        "timeout": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Timeout das requisições HTTP em segundos (padrão: 30)"
+        }
+    },
+    "additionalProperties": false
+}
