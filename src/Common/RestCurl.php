@@ -26,13 +26,13 @@ use Psr\Log\LoggerInterface;
 class RestCurl extends SoapBase
 {
     /** @var string Última URL requisitada */
-    public string $lastRequest = '';
+    public $lastRequest = '';
 
     /** @var string Último corpo de resposta HTTP */
-    public string $lastResponse = '';
+    public $lastResponse = '';
 
     /** @var int Último código HTTP recebido */
-    public int $lastHttpCode = 0;
+    public $lastHttpCode = 0;
 
     /**
      * @param Certificate          $certificate Certificado digital ICP-Brasil

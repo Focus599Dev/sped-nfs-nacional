@@ -29,15 +29,15 @@ use stdClass;
 class Tools
 {
     /** @var stdClass Configuração validada */
-    protected stdClass $config;
+    protected $config;
 
     /** @var string 'producao' | 'homologacao' */
-    protected string $ambiente;
+    protected $ambiente;
 
     /** @var stdClass Endpoints carregados do JSON */
-    protected stdClass $endpoints;
+    protected $endpoints;
 
-    private RestCurl $restCurl;
+    private $restCurl;
 
     /**
      * @param string               $configJson  JSON com cnpj, tpAmb [, timeout]
