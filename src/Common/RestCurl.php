@@ -121,6 +121,11 @@ class RestCurl extends SoapBase
         curl_setopt($oCurl, CURLOPT_SSLCERT, $this->tempdir . $this->certfile);
         curl_setopt($oCurl, CURLOPT_SSLKEY,  $this->tempdir . $this->prifile);
 
+        // Na natuzzi esse comando é obrigatorio caso contario o ambiente da o erro decryption failed or bad record
+        // curl_setopt($oCurl, CURLOPT_FRESH_CONNECT, true);
+        // curl_setopt($oCurl, CURLOPT_FORBID_REUSE, true);
+
+
         if (!empty($this->temppass)) {
             curl_setopt($oCurl, CURLOPT_KEYPASSWD, $this->temppass);
         }
